@@ -1658,7 +1658,11 @@
 
                 <!-- Begin: Content Header -->
                 
+ <div class="content-header">
+                    <h2> AdminForms makes <b>Validation</b> is easier than ever</h2>
 
+                    <p class="lead">Use the Admin Forms you know and love to help build the perfect form.</p>
+                </div>
                 <!-- Validation Example -->
                 <div class="admin-form theme-primary mw1000 center-block" style="padding-bottom: 175px;">
 
@@ -1668,12 +1672,12 @@
 
                             <div class="panel-body bg-light">
 
-                                <div class="section-divider mt20 mb40">
-                                    <span> Tenant Registration rules </span>
+                                <div class="section-divider mt20 mb40" id="mobilenumber">
+                                    <span> Tenant Registration </span>
                                 </div>
 
                                 <!-- start section AUTOGEN-->
-                                <div class="section row" id="spy1">
+                                <div class="section row" >
                                     
                                           <div class="col-md-6">
                                         <label for="mobile_phone" class="field prepend-icon">
@@ -1687,7 +1691,7 @@
 
                                     <div class="col-md-6">
                                         <label for="Autogen" class="field prepend-icon">
-                                            <button class="button btn-primary"  id="autogen" style="height:40px;line-height:0px;">Autogen</button>
+                                            <button class="button btn-primary"  id="autogen" style="height:40px;line-height:0px;">Auto Generator</button>
                                
                            </label>
                                     </div>
@@ -1695,9 +1699,11 @@
                                 </div>
                                              <!-- end row section -->
                               
-                                
+                                <div class="section-divider mt20 mb40" id="tenantinfo">
+                                    <span>Tenant Details </span>
+                                </div>
                                 <!-- .section-divider -->
-                                <div class="section row" id="spy2">
+                                <div class="section row" >
                                     
                                     <div class="col-md-6">
                                         <label for="firstname" class="field prepend-icon">
@@ -1747,7 +1753,7 @@
 
                            
 
-                                <div class="section row" id="spy3">
+                                <div class="section row" id="placeofwork">
                                     
                                     <div class="col-md-6">
                                     <label class="field select">
@@ -1775,10 +1781,10 @@
                                 </div>
                                 <!-- end section -->
 
-                                  <div class="section-divider mv40">
+                                  <div class="section-divider mv40" id="address">
                                     <span> Residential Address </span>
                                 </div>
-                             <div class="section row" id="spy4">
+                             <div class="section row" >
                                     
                                     <div class="col-md-6">
                                     <label for="no" class="field prepend-icon">
@@ -1838,23 +1844,23 @@
                                 <!-- end section -->
                                     
                                 
-                                <div class="section-divider mv40">
+                                <div class="section-divider mv40" id="roomselect">
                                     <span> Room Details </span>
                                 </div>
 
                                
-                                <div class="section row" id="spy5">
+                                <div class="section row" >
 
                                    <div class="col-md-6">
                                     <label class="field select">
                                         <select id="sharing" name="sharing">
                                           
                                             <option value="">Room Shared</option>
-                                            <option value="employee">Single</option>
-                                            <option value="student">Double</option>
-                                            <option value="others">Triple</option>
-                                            <option value="others">Four</option>
-                                            <option value="others">Others</option>
+                                            <option value="employee">0 person</option>
+                                            <option value="student">1 persons</option>
+                                            <option value="others">2 persons</option>
+                                            <option value="others">3 persons</option>
+                                            <option value="others">4+ persons</option>
                                         </select>
                                      
                                         <i class="arrow single-item"></i>
@@ -1862,28 +1868,28 @@
                                 </div>
                                     <!-- end section -->
 
-                               <div class="col-md-3">
+                              
+                                </div>
+                                    <div class="section row">  
+                                     <div class="col-md-3">
 
                                             <label class="option block option-primary">
                                                 <input type="checkbox" name="utilities" value="FR">
                                                 <span class="checkbox"></span> AC
                                             </label>
                                </div>
-                                                              <div class="col-md-3 pl40">
+                              <div class="col-md-3 pl40">
 
                                             <label class="option block option-primary mt10">
                                                 <input type="checkbox" name="utilities" value="EN">
                                                 <span class="checkbox"></span> TV
                                             </label>
                                                               </div>
-                                </div>
-                                    <div class="section row">  
-                                    
-                                            <div class="col-md-4 ">
+                                            <div class="col-md-3 ">
 
                                             <label class="option block option-primary mt10">
                                                 <input type="checkbox" name="utilities" value="CH">
-                                                <span class="checkbox"></span> Attached Bathroom
+                                                <span class="checkbox"></span>Bathroom
                                             </label>
                                                                    </div>
                                            <div class="col-md-3">
@@ -1893,23 +1899,20 @@
                                                 <span class="checkbox"></span> Heater
                                             </label>
                                            </div>
-                                        
-                                              <div class="col-md-3">
+                                              <div class="col-md-12">
                                          <label class="option block option-primary mt10">
-                                                <input type="checkbox" name="utilities" value="CH">
-                                                <span class="checkbox"></span> Generator
+                                            <button class="button btn-primary"  id="generate" style="height:45px;line-height:0px;">Generate</button>
                                             </label>                                           
 
-                                        
                                     </div>
                                     <!-- end section -->
 
                                 </div>
                                 <!-- end .section row section -->
-                                <hr class="alt short">
+                                <hr class="alt short" id="roomstatus">
 
                                 <!-- .section-divider -->
-                                <div class="section row" id="spy6">
+                                <div class="section row" >
                                     <div class="col-md-6 p140">
                                         <label for="roomnumber" class="field prepend-icon">
                                             <input type="text" id="roomnumber" name="roomnumber" class="gui-input" placeholder="Room Number">
@@ -1946,11 +1949,11 @@
                                 <!-- end .section row section -->
 
 
-                               <div class="panel-footer text-center">
+                               <div class="panel-footer text-center" id="submit">
                                    <div class="col-md-6">
-                                   <button type="submit" class="button btn-primary"> Reset</button></div>
+                                   <button type="reset" class="button btn-primary"> Reset</button></div>
                                    <div class="col-md-6">
-                                       <button type="reset" class="button"> Submit</button></div>
+                                       <button type="submit" class="button"> Submit</button></div>
                             </div>
 
                              
@@ -2026,28 +2029,32 @@
                     <div id="nav-spy">
                         <ul class="nav tray-nav">
                             <li class="active">
-                                <a href="#spy1">
-                                    <span class="fa fa-clock-o fa-lg"></span> Mobile Number</a>
+                                <a href="#mobilenumber">
+                                    <span class="fa fa-mobile fa-lg"></span> Mobile Number</a>
                             </li>
                             <li>
-                                <a href="#spy2">
-                                    <span class="fa fa-calendar fa-lg"></span> Name</a>
+                                <a href="#tenantinfo">
+                                    <span class="fa fa-user fa-lg"></span> Tenant Info</a>
                             </li>
                             <li>
-                                <a href="#spy3">
-                                    <span class="fa fa-list-alt fa-lg"></span> Work</a>
+                                <a href="#placeofwork">
+                                    <span class="fa fa-institution fa-lg"></span> Place of Work</a>
                             </li>
                             <li>
-                                <a href="#spy4">
-                                    <span class="fa fa-calendar-o fa-lg"></span> Address</a>
+                                <a href="#address">
+                                    <span class="fa fa-map-marker fa-lg"></span> Address</a>
                             </li>
                             <li>
-                                <a href="#spy5">
-                                    <span class="fa fa-eyedropper fa-lg"></span> Room Select</a>
+                                <a href="#roomselect">
+                                    <span class="fa fa-search fa-lg"></span> Room Select</a>
                             </li>
                             <li>
-                                <a href="#spy6">
-                                    <span class="fa fa-sliders fa-lg"></span>Room Status</a>
+                                <a href="#roomstatus">
+                                    <span class="fa fa-credit-card fa-lg"></span>Room Status</a>
+                            </li>
+                            <li>
+                                <a href="#submit">
+                                    <span class="fa fa-cloud-upload fa-lg"></span> Submit</a>
                             </li>
                         </ul>
                     </div>
