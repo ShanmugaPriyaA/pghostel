@@ -9854,7 +9854,7 @@ input[type="checkbox"] {
   margin-top: 1px \9;
   line-height: normal;
 }
-input[type="file"] {
+input[type="file"]  {
   display: block;
 }
 input[type="range"] {
